@@ -1,0 +1,22 @@
+.heading{
+	text-align: center;
+}
+.form-control{
+	width: 65%;
+	border-radius: 30px;
+	margin-left: 20%;
+	margin-top: 20px;
+
+}
+.btn-success{
+	width: 20%;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 20px;
+
+}
+.myTemplate{
+	margin-left: 20px;
+	margin-top: 20px;
+	border: 2px solid black;
+}

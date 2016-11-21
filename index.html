@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="node_modules/handlebars/dist/handlebars.min.js"></script>
+	<title>Weather Chat</title>
+</head>
+<body>
+<div>
+	<h2 class="heading"><strong>Weather Chart</strong></h2>
+</div>
+<section>
+<div class="search-bar">
+	<input type="text" class="form-control search-data" placeholder="City"><button type="button" class="btn btn-success btn sm bar">Search</button>
+</div>
+</section>
+<section>
+<div class="city-disp">
+	
+</div>
+	<!--<div class="comments">
+		<input type="text" class="form-control" placeholder="comment">
+			<button type="button" class="btn btn-success btn sm">Comment</button>
+				</div>-->
+	
+
+
+</section>
+<script id="weather-template" type="text/x-handlebars-template">
+	<section class="myTemplate">
+		<div>
+			<h1><strong>{{country}}</strong></h1><br>
+			<h2><strong>{{name}}</strong></h2><br>
+			<p>The cloud cover today will be {{clouds}}% </p><br>
+			<p>Humidity will be {{humidity}}%</p><br>
+			<p>General Weather: {{weather}}</p>
+		</div>
+
+		<section>
+			<div class="myComments">
+				{{#each comments}}
+				<p>{{comment}}</p>
+				{{/each}}
+
+			</div>
+		</section>
+	</section>
+</script>
+
+<!--<script id="comment-template" type="text/x-handlebars-template">
+	<div>
+		{{comment}}
+	</div>
+</script>-->
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
